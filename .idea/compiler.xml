@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-<<<<<<< HEAD
-    <bytecodeTargetLevel>
-      <module name="powp-rhymers" target="1.8" />
-    </bytecodeTargetLevel>
-=======
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -14,6 +9,5 @@
         <module name="powp-rhymers" />
       </profile>
     </annotationProcessing>
->>>>>>> 3abe748 (4.2 Zmiana nazw metod)
   </component>
 </project>
