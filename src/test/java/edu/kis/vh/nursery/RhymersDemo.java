@@ -2,13 +2,18 @@ package edu.kis.vh.nursery;
 
 import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.Rhymersfactory;
-
+//projekt jest poprawny
 class RhymersDemo {
 
     public static void main(String[] args) {
         Rhymersfactory factory = new DefaultRhymersFactory();
         
-        DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
+        testRhymers(factory);
+        
+    }
+
+	private static void testRhymers(Rhymersfactory factory) {
+		DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
                 factory.getFIFORhymer(), factory.getHanoiRhymer()};
         
         for (int i = 1; i < 15; i++)
@@ -27,7 +32,6 @@ class RhymersDemo {
         
         System.out.println("total rejected is "
                 + ((HanoiRhymer) rhymers[3]).reportRejected());
-        
-    }
+	}
     
 }
